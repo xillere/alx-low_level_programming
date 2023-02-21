@@ -9,11 +9,11 @@ int main(void)
 {
 	int num;
 
-	num = '/';
+	num = '0';
 
 	while (num < 57)
 	{
-		putchar(num+1);
+		putchar(num);
 		putchar(',');
 		putchar(' ');
 		num++;
