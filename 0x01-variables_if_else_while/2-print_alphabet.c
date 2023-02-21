@@ -16,6 +16,5 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-	putchar(32);
 	return (0);
 }
