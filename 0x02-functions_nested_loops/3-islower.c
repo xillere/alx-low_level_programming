@@ -9,7 +9,7 @@ int _islower(int c)
 	int ch = c;
 	while (ch < 123)
 	{
-		if (ch > 96)
+		if (ch > 96 && ch < 123)
 		{
 			return(1);
 		}
