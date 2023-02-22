@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	char message[] = '_putchar';
+	char message[] = "_putchar";
 	int i = 0;
 
 	while (i < 8)
 	{
-		_putchar(message[i]);
+		putchar(message[i]);
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
