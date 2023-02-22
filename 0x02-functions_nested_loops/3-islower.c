@@ -15,5 +15,8 @@ int _islower(int c)
 		}
 		ch++;
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
