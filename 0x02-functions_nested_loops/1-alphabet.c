@@ -10,7 +10,7 @@ void print_alphabet(void)
 
 	while (ch < 123)
 	{
-		putchar(ch);
+		_putchar(ch);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
