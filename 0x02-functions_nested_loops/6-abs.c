@@ -5,9 +5,9 @@
  *
  * Return: Always 0 (Success)
  */
-int _abs(int)
+int _abs(int n)
 {
-	int num = int;
+	int num = n;
 
 	int abnum = abs(num);
 
