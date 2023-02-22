@@ -7,12 +7,13 @@
 int _islower(int c)
 {
 	int ch = c;
+
 	if (ch > 96 && ch < 123)
 	{
-		return(1);
+		return (1);
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
 }
