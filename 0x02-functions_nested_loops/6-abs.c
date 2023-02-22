@@ -7,9 +7,9 @@
  */
 int _abs(int)
 {
-	num = int;
+	int num = int;
 
-	abnum = abs(num);
+	int abnum = abs(num);
 
 	return (abnum);
 }
