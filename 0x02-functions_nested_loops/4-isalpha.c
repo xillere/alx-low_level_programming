@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
+ * _isalpha - Entry point
+ *@c: input
  * Return: Always 0 (Success)
  */
 int _isalpha(int c)
@@ -12,7 +12,7 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	else if (ch > 96 && ch <123)
+	else if (ch > 96 && ch < 123)
 	{
 		return (1);
 	}
