@@ -6,12 +6,14 @@
  */
 int _islower(int c)
 {
-	while (c < 123)
+	int ch = c;
+	while (ch < 123)
 	{
-		if (96 < c < 123)
+		if (ch < 123)
 		{
 			return(1);
 		}
+		ch++;
 	}
 	return (0);
 }
