@@ -7,13 +7,12 @@
 int _islower(int c)
 {
 	int ch = c;
-	while (ch < 123)
+	if (ch > 96 && ch < 123)
 	{
-		if (ch > 96 && ch < 123)
-		{
-			return(1);
-		}
-		ch++;
+		return(1);
 	}
-	return(0);
+	else
+	{
+		return(0);
+	}
 }
