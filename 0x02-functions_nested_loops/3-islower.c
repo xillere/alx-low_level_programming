@@ -13,10 +13,7 @@ int _islower(int c)
 		{
 			return(1);
 		}
-		else
-		{
-			return(0);
-		}
 		ch++;
 	}
+	return(0);
 }
