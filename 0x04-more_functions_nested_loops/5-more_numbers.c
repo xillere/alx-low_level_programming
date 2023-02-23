@@ -21,9 +21,9 @@ void more_numbers(void)
 
 		while (num < 53)
 		{
-			putchar('1');
-			putchar(num);
+			putchar('1' + num);
 		}
 		x++;
+		putchar('\n');
 	}
 }
