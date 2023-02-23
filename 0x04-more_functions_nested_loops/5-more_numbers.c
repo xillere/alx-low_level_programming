@@ -11,6 +11,7 @@ void more_numbers(void)
 	while (x < 10)
 	{
 		int i = 48;
+		int num = 48;
 
 		while (i < 58)
 		{
@@ -18,12 +19,10 @@ void more_numbers(void)
 			i++;
 		}
 
-		int dd = 48;
-
-		while (dd < 53)
+		while (num < 53)
 		{
 			putchar('1');
-			putchar(dd);
+			putchar(num);
 		}
 		x++;
 	}
