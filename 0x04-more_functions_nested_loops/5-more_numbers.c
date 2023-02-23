@@ -12,6 +12,8 @@ void more_numbers(void)
 	{
 		int i = 48;
 		int num = 48;
+		int check = 1;
+		int num2 = 48;
 
 		while (i < 58)
 		{
@@ -21,8 +23,18 @@ void more_numbers(void)
 
 		while (num < 53)
 		{
-			putchar('1' + num);
-			num++;
+			if (check == 1)
+			{
+				num2 = 49;
+				check = 0;
+			}
+			else
+			{
+				check = 1;
+				num2 = num;
+				num++;
+			}
+			putchar(num2);
 		}
 		x++;
 		putchar('\n');
