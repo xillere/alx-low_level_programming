@@ -22,6 +22,7 @@ void more_numbers(void)
 		while (num < 53)
 		{
 			putchar('1' + num);
+			num++;
 		}
 		x++;
 		putchar('\n');
