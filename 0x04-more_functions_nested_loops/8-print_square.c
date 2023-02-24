@@ -23,6 +23,7 @@ void print_square(int size)
 				putchar(35);
 				z++;
 			}
+			putchar('\n');
 			i++;
 		}
 	}
