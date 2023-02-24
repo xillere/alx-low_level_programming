@@ -20,10 +20,7 @@ void print_diagonal(int n)
 
 		while (i < z)
 		{
-			if (i != 0)
-			{
 				putchar(32);
-			}
 			i++;
 		}
 		putchar('\\');
