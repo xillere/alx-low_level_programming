@@ -6,7 +6,6 @@
  */
 void print_diagonal(int n)
 {
-	int i = 0;
 	int z = 0;
 
 	if (n == 0 || n < 0)
@@ -17,6 +16,8 @@ void print_diagonal(int n)
 	{
 		while (z < n)
 		{
+			int i = 0;
+
 		while (i < z)
 		{
 			if (i != 0)
