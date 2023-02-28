@@ -8,15 +8,17 @@ void rev_string(char *s)
 {
 	int i;
 	int g;
-	char yeah[];
 
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
+
+	char *yeah[i -1];
+
 	for (g = i - 1; g >= 0; g--)
 	{
 		yeah = s[g];
 	}
-	*s = yeah
+	*s = yeah;
 }
