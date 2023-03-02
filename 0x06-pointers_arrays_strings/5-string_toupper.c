@@ -13,7 +13,7 @@ char *string_toupper(char *str)
 
 	c = strlen(str);
 
-	for (i = 0; i < c; i++)
+	for (i = 0; i <= c; i++)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
