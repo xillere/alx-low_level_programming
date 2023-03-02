@@ -1,42 +1,43 @@
 #include <stdio.h>
+#include <string.h>
 /**
- * main - Entry point
- *
+ * leet - Entry point
+ * @str:
  * Return: Always 0 (Success)
  */
-int main(void)
+char *leet(char *str)
 {
-	int len = strlen(str);
-	int i;
+int len = strlen(str);
+int i;
 
-	for (i = 0; i < len; i++)
+for (i = 0; i < len; i++)
+{
+	if (str[i] >= 'a' && str[i] <= 'z')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (str[i] == 'a' || str[i] == 'A')
 		{
-			if (str[i] == 'a' || str[i] == 'A')
-			{
-				str[i] = '4';
-			}
-			else if (str[i] == 'e' || str[i] == 'E')
-			{
-				str[i] = '3';
-			}
-			else if (str[i] == 'o' || str[i] == 'O')
-			{
-				str[i] = '0';
-			}
-			else if (str[i] == 't' || str[i] == 'T')
-			{
-				str[i] = '7';
-			}
-			else if (str[i] == 'l' || str[i] == 'L')
-			{
-				str[i] = '1';
-			}
-			else
-			{
-			}
+			str[i] = '4';
+		}
+		else if (str[i] == 'e' || str[i] == 'E')
+		{
+			str[i] = '3';
+		}
+		else if (str[i] == 'o' || str[i] == 'O')
+		{
+			str[i] = '0';
+		}
+		else if (str[i] == 't' || str[i] == 'T')
+		{
+			str[i] = '7';
+		}
+		else if (str[i] == 'l' || str[i] == 'L')
+		{
+			str[i] = '1';
+		}
+		else
+		{
 		}
 	}
-	return (str);
+}
+return (str);
 }
