@@ -16,12 +16,10 @@ char *_strncat(char *dest, char *src, int n)
 	x = strlen(src);
 
 	z = strlen(dest);
-	if (n <= x)
+
+	for (i = 0; i < n ; i++)
 	{
-		for (i = 0; i < n ; i++)
-		{
-			dest[z + i] = src[i];
-		}
+		dest[z + i] = src[i];
 	}	
 	return (dest);
 }
