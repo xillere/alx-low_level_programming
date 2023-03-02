@@ -8,7 +8,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int a, b;
+	int a, b, sum;
 
 	a = strlen(s1);
 	b = strlen(s2);
@@ -19,10 +19,12 @@ int _strcmp(char *s1, char *s2)
 	}
 	else if (a > b)
 	{
-		return (a - b);
+		sum = a - b;
+		return (sum);
 	}
 	else
 	{
-		return (a - b);
+		sum = a - b;
+		return (sum);
 	}
 }
