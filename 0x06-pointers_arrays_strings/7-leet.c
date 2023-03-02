@@ -7,34 +7,21 @@
  */
 char *leet(char *str)
 {
-	int len = strlen(str);
-	int i;
+	char *fin = str;
+	char let[] = { 'a', 'e', 'o', 't', 'l' };
+	char num[] = { 4, 3, 0, 7, 1 };
+	int i = 0;
 
-	for (i = 0; i < len; i++)
+	while (*str)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
+		for (i = 0; i < 5; i++)
 		{
-			str[i] = '4';
+			if (*str == let[i] || *str == let[i] - 32)
+			{
+				*str = num[i] + '0';
+			}
 		}
-		else if (str[i] == 'e' || str[i] == 'E')
-		{
-			str[i] = '3';
-		}
-		else if (str[i] == 'o' || str[i] == 'O')
-		{
-			str[i] = '0';
-		}
-		else if (str[i] == 't' || str[i] == 'T')
-		{
-			str[i] = '7';
-		}
-		else if (str[i] == 'l' || str[i] == 'L')
-		{
-			str[i] = '1';
-		}
-		else
-		{
-		}
+	str++;
 	}
-	return (str);
+	return (fin);
 }
