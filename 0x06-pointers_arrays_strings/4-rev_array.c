@@ -9,7 +9,7 @@ void reverse_array(int *a, int n)
 {
 	int i;
 	int owari;
-	int copy[13];
+	int copy[12];
 
 	owari = n;
 
@@ -17,8 +17,9 @@ void reverse_array(int *a, int n)
 	{
 		copy[i] = a[i];
 	}
-	for (i = 0; i < n; i++, owari--)
+	for (i = 0; i < n; i++)
 	{
-		a[i] = copy[owari];
+		a[i] = copy[owari - 1];
+		owari--;
 	}
 }
