@@ -7,34 +7,34 @@
  */
 char *leet(char *str)
 {
-int len = strlen(str);
-int i;
+	int len = strlen(str);
+	int i;
 
-for (i = 0; i < len; i++)
-{
-	if (str[i] == 'a' || str[i] == 'A')
+	for (i = 0; i < len; i++)
 	{
-		str[i] = '4';
+		if (str[i] == 'a' || str[i] == 'A')
+		{
+			str[i] = '4';
+		}
+		else if (str[i] == 'e' || str[i] == 'E')
+		{
+			str[i] = '3';
+		}
+		else if (str[i] == 'o' || str[i] == 'O')
+		{
+			str[i] = '0';
+		}
+		else if (str[i] == 't' || str[i] == 'T')
+		{
+			str[i] = '7';
+		}
+		else if (str[i] == 'l' || str[i] == 'L')
+		{
+			str[i] = '1';
+		}
+		else
+		{
+		}
 	}
-	else if (str[i] == 'e' || str[i] == 'E')
-	{
-		str[i] = '3';
-	}
-	else if (str[i] == 'o' || str[i] == 'O')
-	{
-		str[i] = '0';
-	}
-	else if (str[i] == 't' || str[i] == 'T')
-	{
-		str[i] = '7';
-	}
-	else if (str[i] == 'l' || str[i] == 'L')
-	{
-		str[i] = '1';
-	}
-	else
-	{
-	}
-}
-return (str);
+	return (str);
 }
