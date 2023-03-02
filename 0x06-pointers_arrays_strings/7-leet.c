@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * leet - Entry point
- * @str:
+ * @str: string
  * Return: Always 0 (Success)
  */
 char *leet(char *str)
