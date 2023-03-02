@@ -16,12 +16,12 @@ int _strcmp(char *s1, char *s2)
 	}
 	else if (s1[0] > s2[0])
 	{
-		sum = s2[0] - s1[0];
+		sum = s1[0] - s2[0];
 		return (sum);
 	}
 	else
 	{
-		sum = s2[0] - s1[0];
+		sum = s1[0] - s2[0];
 		return (sum);
 	}
 }
