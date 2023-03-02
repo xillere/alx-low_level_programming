@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * string_toupper - Entry point
- * @*: pointer
+ * @str: pointer
  * Return: Always 0 (Success)
  */
 char *string_toupper(char *str)
