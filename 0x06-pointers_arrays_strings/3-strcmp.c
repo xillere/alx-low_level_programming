@@ -8,23 +8,20 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int a, b, sum;
+	int sum;
 
-	a = strlen(s1);
-	b = strlen(s2);
-
-	if (a == b)
+	if (s1[0] == s2[0])
 	{
 		return (0);
 	}
-	else if (a > b)
+	else if (s1[0] > s2[0])
 	{
-		sum = a - b;
+		sum = s1[0] - s2[0];
 		return (sum);
 	}
 	else
 	{
-		sum = a - b;
+		sum = s1[0] - s2[0];
 		return (sum);
 	}
 }
