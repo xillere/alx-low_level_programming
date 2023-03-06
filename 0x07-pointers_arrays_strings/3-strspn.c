@@ -17,7 +17,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[i] == accept[x])
 			{
-				c++;
 				boo = 1;
 				break;
 			}
