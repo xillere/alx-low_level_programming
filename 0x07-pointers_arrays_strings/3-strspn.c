@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * _strspn - Entry point
  * @s: string
  * @accept: checker
  * Return: Always 0 (Success)
