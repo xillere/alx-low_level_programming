@@ -6,6 +6,8 @@
  */
 int main(void)
 {
+	int s, b;
+
 	s = 97;
 	b = 65;
 
