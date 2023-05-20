@@ -12,7 +12,10 @@ int main(void)
 	{
 		putchar(48 + i);
 		putchar(44);
-		putchar(' ');
+		if (i != 9)
+		{
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
