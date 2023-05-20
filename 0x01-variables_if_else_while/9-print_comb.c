@@ -11,9 +11,9 @@ int main(void)
 	for (i = 0; i < 10; i++)
 	{
 		putchar(48 + i);
-		putchar(44);
-		if (i != 8)
+		if (i != 9)
 		{
+			putchar(44);
 			putchar(' ');
 		}
 	}
