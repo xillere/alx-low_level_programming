@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * print_times_table - Entry point
  * @n: var
  * Return: Always 0 (Success)
  */

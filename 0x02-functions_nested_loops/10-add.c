@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * add - Entry point
  * @num1, num2: var
  * Return: Always 0 (Success)
  */

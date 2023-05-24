@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlb.h>
 /**
- * main - Entry point
+ * print_to_98 - Entry point
  * @n: var
  * Return: Always 0 (Success)
  */
