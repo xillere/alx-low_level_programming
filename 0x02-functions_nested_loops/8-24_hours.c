@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * jack_bauer - Entry point
  * @h, m: var
  * Return: Always 0 (Success)
  */
