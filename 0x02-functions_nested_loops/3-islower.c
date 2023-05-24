@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * _islower - Entry point
  *
@@ -6,7 +7,7 @@
  */
 int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
+i	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
