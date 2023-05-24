@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlb.h>
 /**
  * print_to_98 - Entry point
  * @n: var
