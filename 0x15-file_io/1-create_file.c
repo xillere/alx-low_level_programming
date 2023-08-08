@@ -6,7 +6,7 @@
  * @text_content: pointer to string
  * Return: on failure -1
  *
- **/
+ */
 int create_file(const char *filename, char *text_content)
 {
 	int len, op, wr = 0;
