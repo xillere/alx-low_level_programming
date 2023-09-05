@@ -28,7 +28,7 @@ char *create_buffer(char *filename)
 
 /**
  * close_file - closes fd
- * @fd: fd to closse
+ * @fd: file to closse
  */
 void close_file(int fd)
 {
@@ -47,7 +47,7 @@ void close_file(int fd)
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: on success retuens 0
+ * Return: on success 0
  *
  * Description: if the argc is wrong - exit 97
  *              if file_from does not exist or cannot be read - exit 98
