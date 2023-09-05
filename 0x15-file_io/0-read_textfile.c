@@ -5,8 +5,9 @@
  * read_textfile - Reads
  * @filename: pointer filename
  * @letters: letters to read and print.
+ *
  * Return: on failure or NULL - 0
- **/
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t op, rd, wr;
@@ -28,4 +29,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buff);
 		return (0);
 	}
+
+	free(buff);
+	close(op);
+
+	return (wr);
 }
