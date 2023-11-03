@@ -8,22 +8,17 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	int check, i;
-	char *value;
+	hash_node_t *node;
+	unsigned long int index;
 
-	check = 0;
-	for (i = 0, ht->array[i], i++)
-	{
-		if (strcmp(ht->array[i]->key, key) == 0)
-		{
-			check = 1;
-			value = strdup(ht->array[i]->value);
-		}
-	}
-	if (check == 0)
-	{
+	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
-	}
+	index = key_index((const unsigned char *)key, ht->size);
+	if (index >= ht->size)
+		return (NULL);
+	node = ht->array[index];
+	while (node && strcmp(node->key, key) != 0)
+		node = node->next;
 
-	return (value);
+	return ((node == NULL) ? NULL : node->value);
 }
