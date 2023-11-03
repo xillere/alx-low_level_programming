@@ -5,7 +5,7 @@
  * @size: size of ther hashtable
  *
  * Return: pointer to new hash table
- **/
+ */
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
@@ -24,7 +24,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < ht->size; i++)
+	for (i = 0; i < size; i++)
 		ht->array[i] = NULL;
 
 	return (ht);
