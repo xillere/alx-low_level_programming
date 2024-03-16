@@ -33,7 +33,7 @@ int recursive(int *array, size_t size, int value)
 	if (value < array[bytwo])
 		return (recursive(array, bytwo, value));
 
-	half++;
+	bytwo++;
 
 	return (recursive(array + bytwo, size - bytwo, value) + bytwo);
 }
